@@ -1,0 +1,377 @@
+
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+    <meta charset="utf-8"/>
+    <!--css-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/tables.css">
+
+
+    <title>Moder Tables Styleguide</title>
+</head>
+
+<body class="section-styleguide">
+
+<article class="wrap">
+    <!-- Tables
+================================================== -->
+<div class="bs-docs-section">
+  <h1 id="tables" class="page-header">Tables</h1>
+
+<h2 id="Styling classes">Table head styles</h2>
+  <p>Highlighted, arrows, active and hover rows and cells.</p>
+
+  <div>
+    <table class="table col-last-right">
+      <thead>
+        <tr>
+          <th class="col-sortable-head-active">Active, sort down<span class="arrow-base arrow-down arrow-active"><span/></th>
+          <th class="col-sortable-head"><a>Sortable down</a><span class="arrow-base arrow-down arrow-link"><span/></th>
+          <th class="col-sortable-head-active">Active, sort up<span class="arrow-base arrow-up arrow-active"><span/></th>
+          <th class="col-sortable-head"><a>Sortable up</a><span class="arrow-base arrow-up arrow-link"><span/></th>
+          <th>Not sortable<span</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>1/1/2021</td>
+          <td><a href="">Edit<span class="arrow-base arrow-down arrow-link"><span/></a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div><!-- /example -->
+
+<h2 id="tables-example">Table equal width</h2>
+  <p>Equalize column width (remove default last column width) add class <code>.col-unforce</code> to table.</p>
+  <div>
+    <table class="table col-unforce col-last-right">
+      <thead>
+        <tr>
+          <th>Column</th>
+          <th>Column</th>
+          <th>Column</th>
+          <th>Column</th>
+          <th>Unforce</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>1/1/2021</td>
+          <td><a href="">Edit<span class="arrow-base arrow-down arrow-link"><span/></a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>1/1/2021</td>
+          <td><a href="">Edit<span class="arrow-base arrow-down arrow-link"><span/></a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div><!-- /example -->
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">&quot;table&quot;</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/table&gt;</span>
+</code></pre></div>
+
+<h2 id="tables-example">Table forced left with zebra striping.</h2>
+  <p>Add <code>.force-left</code> to table wide last column. Add <code>.table-zebra</code> for zerbra striped rows.</p>
+  <div>
+    <table class="table table-zebra force-left col-last-right">
+      <thead>
+        <tr>
+          <th>Column</th>
+          <th>Column</th>
+          <th>Column</th>
+          <th>Column</th>
+          <th>Column</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>1/1/2021</td>
+          <td><a href="">Edit<span class="arrow-base arrow-down arrow-link"><span/></a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>1/1/2021</td>
+          <td><a href="">Edit<span class="arrow-base arrow-down arrow-link"><span/></a></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>1/1/2021</td>
+          <td><a href="">Edit<span class="arrow-base arrow-down arrow-link"><span/></a></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>1/1/2021</td>
+          <td><a href="">Edit<span class="arrow-base arrow-down arrow-link"><span/></a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div><!-- /example -->
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">&quot;table table-zebra&quot;</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/table&gt;</span>
+</code></pre></div>
+
+<h2 id="tables-bordered">Bordered with background and striping</h2>
+  <p>Add <code>.table-bordered</code> for borders on all sides of the table. Add <code>.table-background</code> for a background on the table.</p>
+  <div class="bs-example">
+    <table class="table table-bordered table-background force-left table-zebra col-last-right">
+      <thead>
+        <tr>
+          <th>Column</th>
+          <th>Column</th>
+          <th>Column</th>
+          <th>Column</th>
+          <th>Column</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>1/1/2021</td>
+          <td><a href="">Edit<span class="arrow-base arrow-down arrow-link"><span/></a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>1/1/2021</td>
+          <td><a href="">Edit<span class="arrow-base arrow-down arrow-link"><span/></a></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>1/1/2021</td>
+          <td><a href="">Edit<span class="arrow-base arrow-down arrow-link"><span/></a></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>1/1/2021</td>
+          <td><a href="">Edit<span class="arrow-base arrow-down arrow-link"><span/></a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div><!-- /example -->
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">&quot;table table-bordered table-background table-zebra&quot;</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/table&gt;</span>
+</code></pre></div>
+
+  <h2 id="tables-hover-rows">Hover rows</h2>
+  <p>Add <code>.table-hover</code> to enable a hover state on table rows within a <code>&lt;tbody&gt;</code>.</p>
+  <div class="bs-example">
+    <table class="table table-hover force-left table-zebra col-last-right">
+      <thead>
+        <tr>
+          <th>Column</th>
+          <th>Column</th>
+          <th>Column</th>
+          <th>Column</th>
+          <th>Column</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>1/1/2021</td>
+          <td><a href="">Edit<span class="arrow-base arrow-down arrow-link"><span/></a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>1/1/2021</td>
+          <td><a href="">Edit<span class="arrow-base arrow-down arrow-link"><span/></a></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>1/1/2021</td>
+          <td><a href="">Edit<span class="arrow-base arrow-down arrow-link"><span/></a></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>1/1/2021</td>
+          <td><a href="">Edit<span class="arrow-base arrow-down arrow-link"><span/></a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div><!-- /example -->
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">&quot;table table-hover&quot;</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/table&gt;</span>
+</code></pre></div>
+
+
+  <h2 id="tables-condensed">Condensed table</h2>
+  <p>Add <code>.table-condensed</code> to make tables more compact by cutting cell padding in half.</p>
+  <div class="bs-example">
+    <table class="table table-condensed table-hover force-left table-zebra col-last-right">
+      <thead>
+        <tr>
+          <th>Column</th>
+          <th>Column</th>
+          <th>Column</th>
+          <th>Operations</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td><a href="">Edit<span class="arrow-base arrow-down arrow-link"><span/></a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td><a href="">Edit<span class="arrow-base arrow-down arrow-link"><span/></a></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td colspan="2">Larry the Bird</td>
+          <td><a href="">Edit<span class="arrow-base arrow-down arrow-link"><span/></a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div><!-- /example -->
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">&quot;table table-condensed&quot;</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/table&gt;</span>
+</code></pre></div>
+
+
+  <h2 id="tables-contextual-classes">Contextual classes</h2>
+  <p>Use contextual classes to color table rows or individual cells.</p>
+  <div class="bs-example">
+    <table class="table table-hover force-left table-zebra col-last-right ">
+      <thead>
+        <tr>
+          <th>Class</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="active">
+          <td> <code>.active</code></td>
+          <td class="col-left">Applies the hover color to a particular row or cell</td>
+        </tr>
+        <tr class="success">
+          <td> <code>.success</code></td>
+          <td class="col-left">Indicates a successful or positive action</td>
+        </tr>
+        <tr class="info">
+          <td> <code>.info</code></td>
+          <td class="col-left">Indicates a neutral informative change or action</td>
+        </tr>
+        <tr class="warning">
+          <td> <code>.warning</code></td>
+          <td class="col-left">Indicates a warning that might need attention</td>
+        </tr>
+        <tr class="danger">
+          <td> <code>.danger</code></td>
+          <td class="col-left">Indicates a dangerous or potentially negative action</td>
+        </tr>
+      </tbody>
+    </table>
+  </div><!-- /example -->
+<div class="highlight"><pre><code class="html"><span class="c">&lt;!-- On rows --&gt;</span>
+<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">&quot;active&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">&quot;success&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">&quot;warning&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">&quot;danger&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">&quot;info&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/tr&gt;</span>
+</code></pre></div>
+
+<h2 id="tables-example">Table column classes</h2>
+  <p>Table with highlighted, sortable, active, left aligned, right aligned and centered.</p>
+  <div>
+    <table class="table table-hover table-zebra col-last-right">
+      <thead>
+        <tr>
+          <th class="col-center">Center</th>
+          <th class="col-highlight">Highlight</th>
+          <th class="col-force">Force<span/></th>
+          <th class="col-sortable-head">Sortable<span class="arrow-base arrow-down arrow-link"><span/></th>
+          <th class="col-right col-sortable-head-active">Sorted<span class="arrow-base arrow-down arrow-active"></th>
+          <th class="col-right">Right</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col-center">1</td>
+          <td class="col-highlight">Mark</td>
+          <td>Otto</td>
+          <td>1/1/2021</td>
+          <td class="col-right col-sorted">5434</td>
+          <td class="col-right"><a href="">Edit<span class="arrow-base arrow-down arrow-link"><span/></a></td>
+        </tr>
+        <tr>
+          <td class="col-center">2</td>
+          <td class="col-highlight">Jacob</td>
+          <td>Thornton</td>
+          <td>1/1/2021</td>
+          <td class="col-right col-sorted">3456</td>
+          <td class="col-right"><a href="">Edit<span class="arrow-base arrow-down arrow-link"><span/></a></td>
+        </tr>
+        <tr>
+          <td class="col-center">3</td>
+          <td class="col-highlight">Larry</td>
+          <td>the Bird</td>
+          <td>1/1/2021</td>
+          <td class="col-right col-sorted">2345</td>
+          <td class="col-right"><a href="">Edit<span class="arrow-base arrow-down arrow-link"><span/></a></td>
+        </tr>
+        <tr>
+          <td class="col-center">4</td>
+          <td class="col-highlight">Larry</td>
+          <td>the Bird</td>
+          <td>1/1/2021</td>
+          <td class="col-right col-sorted">1234</td>
+          <td class="col-right"><a href="">Edit<span class="arrow-base arrow-down arrow-link"><span/></a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div><!-- /example -->
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">&quot;table table-right&quot;</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/table&gt;</span>
+</code></pre></div>
+
+</article>
+
+        </div><!--/@main-->
+
+    </body>
+</html>

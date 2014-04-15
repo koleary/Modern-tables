@@ -1,0 +1,346 @@
+
+/* demo only */
+.highlight {
+  margin: 0 0 2em;
+  font-size: 75%;
+}
+a {
+  color: #29AAE1;
+}
+
+/* basic styles */
+
+table {
+  margin: 0 0 2em;
+  border-spacing: 0;
+  width: 100%;
+  color: #555;
+  overflow: scroll;
+}
+tbody {
+  border-collapse: collapse;
+  border-top: 1px solid #ddd;
+}
+tfoot {
+	border-bottom: border-top: 1px solid #ddd;
+}
+th {
+  border-bottom: 2px solid #bbb;
+  border-top: 1px solid #ddd;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  font-size: 80%;
+  font-weight: bold;
+  color: #999;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  white-space: nowrap;
+}
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  white-space: nowrap;
+}
+td a {
+  color: #29AAE1;
+}
+td a:hover {
+  color: #2288BB;
+}
+th a {
+  color: #999;
+}
+td a:hover,
+th a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* classes to change layout and style for the whole table */
+
+/* table force columns left */
+.force-left th:last-child {  
+  width: 100%;
+}
+
+/* table force columns right */
+.force-right th:first-child {  
+  width: 100%;
+}
+
+/* table last column right. Aligns align last column contents right */
+.col-last-right td:last-child,
+.col-last-right th:last-child { 
+  text-align: right;
+}
+
+/* table first column left. Aligns first column contents left */
+.col-first-left td:first-child,
+.col-first-left th:first-child { 
+  text-align: left;
+}
+
+/* table zebra striped */
+.table-zebra tbody tr:nth-child(even), 
+tbody tr.even {
+  background:#f2f2f2;
+}
+
+/* table row hover */
+.table-hover tbody tr:hover,
+.table-hover tbody tr:nth-child(even) > tr:hover {
+  background:#FFF;
+}
+
+/* table bordered */
+.table-bordered {
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+
+/* table with a background */
+.table-background {
+  background: #f9f9f9;
+}
+
+/* table wth rows condensed */
+.table-condensed td,
+.table-condensed th { 
+  padding-top: .25em;
+  padding-bottom: .25em;
+}
+
+/* classes that target specific columns */
+
+/* sortable column */
+td.col-sorted {
+  background: #EEE;
+}
+td.col-sorted:hover {
+  background: #F2F2F2;
+}
+.col-sortable-head {
+  border-bottom: 2px solid #29AAE1;
+}
+.col-sortable-head:hover {
+  background: #fff;
+}
+.col-sortable-head:hover > a {
+  color: #29AAE1;
+}
+.col-sortable-head:hover > span.arrow-base {
+  border-bottom: 2px solid #29AAE1;
+  border-right: 2px solid #29AAE1;
+}
+.col-sortable-head-active {
+  border-bottom: 2px solid #F05A26;
+  color: #333;
+  background: #E5E5E5;
+}
+.col-sortable-head:active,
+.col-sortable-head-active:active {
+  border-bottom: 2px solid #F05A26;
+}
+.col-sortable-head:active > span.arrow-base {
+  border-bottom: 2px solid #F05A26;
+  border-right: 2px solid #F05A26;
+}
+.col-sortable-head:active > a,
+.col-sortable-head-active:active > a {
+  color: #333;
+}
+.col-sortable-head-active:hover {
+  color: #29AAE1;
+  border-bottom: 2px solid #29AAE1;
+  background: #fff;
+}
+.col-sortable-head-active:hover > span.arrow-base {
+  border-bottom: 2px solid #2288BB;
+  border-right: 2px solid #2288BB;
+}
+.col-sortable-head-active:active {
+  color: #333;
+  border-bottom: 2px solid #F05A26;
+  background: #FFF;
+}
+.col-sortable-head-active:active > span.arrow-base {
+  border-bottom: 2px solid #F05A26;
+  border-right: 2px solid #F05A26;
+}
+
+/* centered column */
+.col-center,
+td.col-center:last-child,
+td.col-center:first-child,
+th.col-center:last-child,
+th.col-center:first-child  {
+  text-align: center;
+  padding: 0.5em 2em;
+}
+
+/* right-aligned column */
+.col-right,
+td.col-right:last-child,
+td.col-right:first-child,
+th.col-right:last-child,
+th.col-right:first-child  {
+  text-align: right;
+  padding: 0.5rem 1rem 0.5rem 3rem;
+}
+
+/* left-aligned column */
+.col-left,
+td.col-left:last-child,
+td.col-left:first-child,
+th.col-left:last-child,
+th.col-left:first-child {
+  text-align: left;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+}
+
+/* highlighted column */
+.col-highlight,
+td.col-highlight:last-child,
+td.col-highlight:first-child,
+th.col-highlight:last-child,
+th.col-highlight:first-child  {
+  background: #FFF;
+  font-weight: bold;
+}
+td.col-highlight:hover {
+  background: #F5F5F5;
+}
+
+/* "forced" column. Uses 100% width to push apart a single column */
+.col-force { 
+  width: 100%;
+}
+
+/* Unforce. Removes default 100% width (add to last child) */
+.col-unforce th:last-child { 
+  width: auto;
+}
+
+
+/* Contextual classes for rows and cells */
+
+/* success */
+tr.success,
+tr.success > td:first-child,
+td.success {
+  border-left: 4px solid #8AC340;
+}
+.success:hover,
+.success:nth-child(even) > tr:hover {
+  background: #FAFFF0 !important;
+}
+
+/* active */
+tr.active > td:first-child,
+td.active {
+  border-left: 4px solid #F05A26;
+}
+.active:hover,
+.active:nth-child(even) > tr:hover {
+  background: #FEF7EF !important;
+}
+
+/* warning */
+tr.warning > td:first-child,
+td.warning {
+  border-left: 4px solid #F7941F;
+}
+.warning:hover,
+.warning:nth-child(even) > tr:hover {
+  background: #FEF7EF !important;
+}
+
+/* danger */
+tr.danger > td:first-child,
+td.danger  {
+  border-left: 4px solid #CA1F25;
+}
+.danger:hover,
+.danger:nth-child(even) > tr:hover {
+  background: #FDF7F8 !important;
+}
+
+/* info */
+tr.info > td:first-child,
+td.info {
+  border-left: 4px solid #FFD24D;
+}
+.info:hover,
+.info:nth-child(even) > tr:hover {
+  background: #FFFAEC !important;
+}
+
+/* css arrows for expand and sort */
+
+.arrow-base {
+  content: "";
+  display: inline-block;
+  border: 2px solid transparent;
+  width: .5em;
+  height: .5em;
+  position: relative;
+  top: -4px;
+  left: 6px;
+}
+.arrow-base:hover {
+  border-bottom: 2px solid #2288BB;
+  border-right: 2px solid #2288BB;
+  cursor: pointer;
+}
+.arrow-link{
+  border-bottom: 2px solid #29AAE1;
+  border-left: 2px solid transparent;
+  border-right: 2px solid #29AAE1;
+  border-top: 2px solid transparent;
+}
+.arrow-active {
+  border-bottom: 2px solid #F05A26;
+  border-left: 2px solid transparent;
+  border-right: 2px solid #F05A26;
+  border-top: 2px solid transparent;
+}
+.arrow-right {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.arrow-left {
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.arrow-up {
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  top: 0px;
+}
+.arrow-down {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* TODO: media query removes letterspacing, nowrap for mobile ;
+ th {
+  letter-spacing: 0em;
+  white-space: normal;
+}
+*/
+
+     
+        
+  
